@@ -20,17 +20,19 @@ body{
 /* ------header-------- */
 
 .header{
-    border:2px solid;
-    position: sticky;
+    /* border:2px solid; */
+    position: fixed;
+    right: 0;
+    left: 0;
     top:0;
-    z-index:10;
+    z-index:100;
     height: auto;
     min-height: 7rem;
     /* background-color: rgb(20, 20, 20); */
 }
 
 .navbar{
-    border:2px solid red;
+    /* border:2px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,7 +130,7 @@ body{
     transition: transform .3s ease-in-out;
 }
 
-.nav-icons .profile .fa-sort-down:hover{
+.nav-icons .profile:hover .fa-sort-down{
     transform: rotate(180deg);
 }
 
@@ -142,7 +144,171 @@ header.scrolled .navbar{
 
 /* -------- main ---------- */
 
-.main{
-    height: 120vh;
+
+/* ####### bill-board ##########  */
+
+.bill-board{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 56.25vw;
+    background-color: #000;
+
+}
+
+.bill-board-container{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.bill-board-bg-img{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background:linear-gradient(to right,rgba(0,0,0,.7),rgba(0,0,0,.1));
+}
+
+.bill-board-bg-img img{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    width: 100%;
+    background-position: 50%;
+
+}
+
+.bill-board-bg-img .layer1{
+    background: linear-gradient(77deg,rgba(0,0,0,.6),transparent 85%);
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 26.09%;
+    top: 0;
+}
+
+.bill-board-bg-img .layer2{
+    background-image: linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 15%,hsla(0,0%,8%,.35) 29%,hsla(0,0%,8%,.58) 44%,#141414 68%,#141414);
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    bottom: -1px;
+    height: 14.7vw;
+    opacity: 1;
+    top: auto;
+    width: 100%;
+}
+
+
+
+/* ------- fill container ----------  */
+
+.fill-container{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.fill-container .info-wrapper{
+    bottom: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: 4%;
+    position: absolute;
+    top: 0;
+    width: 36%;
+    z-index: 10;
+    color:var(--color-fade-white);
+}
+
+.fill-container .info-wrapper .title{
+    /* border:2px solid white; */
+    margin-bottom: 1.2vw;
+    min-height: 13.2vw;
+    position: relative;
+    
+}
+
+.fill-container .info-wrapper .title img{
+    width: 100%;
+}
+
+
+.fill-container .info-wrapper .info{
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.2vw;
+}
+
+
+/* buttons */
+
+.fill-container .info-wrapper .buttons{
+    font-size: 1.3vw;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap:1vw;
+    
+}
+
+.info-wrapper .buttons a{
+    /* border: 2px solid white; */
+    display: inline-block;
+    transition: hover .1s ease-in-out;
+}
+
+.info-wrapper .buttons a:hover{
+    opacity: .8;
+}
+
+
+.info-wrapper .buttons .play{
+    background-color: var(--color-white);
+    color: black;
+    text-decoration: none;
+    padding: .6vw 2.2vw;
+    font-weight: 500;
+    border-radius: .3vw;
+    /* margin-right: 1rem; */
+    display: inline-flex;
+    align-items: center;
+    gap:.8vw;
+    
+}
+
+.info-wrapper .buttons .play .fa-play{
+     /* margin-right: .6rem; */
+     font-size: 1.9vw;
+     /* transform: translateY(3.5px); */
+}
+
+.info-wrapper .buttons .more-info{
+    background-color: var(--btn-color-grey);
+    color: #fff;
+    text-decoration: none;
+    padding: .8vw 1.6vw;
+    font-weight: 500;
+    border-radius: .3vw;
+    /* margin-right: 1rem; */
+    display: inline-flex;
+    align-items: center;
+    gap:.8vw;
+    
+    
 }
 
