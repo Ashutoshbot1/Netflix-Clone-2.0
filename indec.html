@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Netflix</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-items">
+                <div class="logo">
+                    <a href="#">
+                        NETFLIX
+                    </a>
+                </div>
+                <ul class="nav-items">
+                    <l1 class="nav-item"><a href="#" class="home">home</a></l1>
+                    <l1 class="nav-item"><a href="#">tv shows</a></l1>
+                    <l1 class="nav-item"><a href="#">movies</a></l1>
+                    <l1 class="nav-item"><a href="#">new & popular</a></l1>
+                    <l1 class="nav-item"><a href="#">my list</a></l1>
+                    <l1 class="nav-item"><a href="#">browser by languages</a></l1>
+                </ul>
+            </div>
+
+            <div class="nav-icons">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="bell">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div class="profile">
+                    <div class="image">
+                        <img src="http://occ-0-2186-2164.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABd2iBy1NSegYCzAbUxV12X2MEotOcn3FnxvaalWe08Wleic_GCdzveB-hLJq4mCnqGOu1zeBLD59D7X5sMZ2lyli0HfoyrY.png?r=558" alt="">
+                    </div>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main"></main>
+
+    <footer class="footer"></footer>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('scroll',()=>{
+            const header = document.querySelector('header');
+    
+            if(window.scrollY>0){
+                header.classList.add('scrolled');
+            }
+            else{
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+    
+</body>
+</html>
