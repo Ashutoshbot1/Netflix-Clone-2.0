@@ -26,7 +26,7 @@ body{
     right: 0;
     left: 0;
     top:0;
-    z-index:100;
+    z-index:1000;
     height: auto;
     min-height: 7rem;
     /* background-color: rgb(20, 20, 20); */
@@ -60,18 +60,34 @@ body{
 }
 
 .logo-items .logo{
-    /* border: 2px solid; */
-    width: 9.25rem;
-    height: 2.96rem;
+    display: flex;
+    align-items: center;
+    gap:4rem;
+    font-size: 1.4rem;
 }
 
 .logo-items .logo a{
     color: var(--color-d-red);
     font-weight: var(--fw-700);
-    display: inline-block;
+    display:block;
     font-size: 2.5rem;
-    /* z-index: 200; */
-    width: 100%;
+}
+
+.logo-items .logo .browse{
+    /* border:2px solid white; */
+    color: var(--color-fade-white);
+    font-weight: var(--fw-700);
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.logo-items .logo .browse .fa-sort-down{
+    transform: translateY(-1px);
+    font-size: 1.6rem;
+    margin-left: .5rem;
 }
 
 .navbar .nav-icons{
@@ -145,19 +161,24 @@ header.scrolled .navbar{
 
 /* -------- main ---------- */
 
+/* .main{
+    border:10px solid white;
+} */
 
 /* ####### bill-board ##########  */
 
 .bill-board{
+    /* border:10px solid red; */
     position: relative;
     top:0;
     width: 100%;
-    height: 54vw;
+    height: 55vw;
     background-color: #000;
 
 }
 
 .bill-board-container{
+    /* border: 2px solid blue; */
     bottom: 0;
     left: 0;
     position: absolute;
@@ -167,6 +188,7 @@ header.scrolled .navbar{
 
 
 .bill-board-bg-img{
+    /* border: 2px solid green; */
     bottom: 0;
     left: 0;
     position: absolute;
@@ -176,6 +198,7 @@ header.scrolled .navbar{
 }
 
 .bill-board-bg-img img{
+    /* border: 2px solid blue; */
     bottom: 0;
     left: 0;
     position: absolute;
@@ -184,6 +207,7 @@ header.scrolled .navbar{
     background-size: cover;
     width: 100%;
     background-position: 50%;
+    height: 100%;
 
 }
 
@@ -222,7 +246,7 @@ header.scrolled .navbar{
 }
 
 .fill-container .info-wrapper{
-    bottom: 35%;
+    bottom: 36%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -316,8 +340,8 @@ header.scrolled .navbar{
 /* ------ titles------------ */
 
 .titles{
+    /* border:10px solid blue; */
     position: relative;
-    /* border:2px solid white; */
     top:-15vw
     
 }
@@ -343,8 +367,6 @@ header.scrolled .navbar{
     display: flex;
     gap:.6vw;
     overflow:auto;
-    pointer-events: none;
-    position: relative;
 }
 
 ::-webkit-scrollbar{
@@ -355,7 +377,7 @@ header.scrolled .navbar{
     border: 2px solid;
     min-width: 17%;
     max-width: 17%;
-    pointer-events: auto;
+    
 }
 
 .title-container .card .image img{
@@ -468,10 +490,11 @@ header.scrolled .navbar{
     margin: auto;
     padding: 2vw;
     color: white;
-    padding-right: 10rem;
+    padding-right: 100px;
 }
 
-.footer-container li{
+.footer-container ul li{
+    /* border:2px solid; */
     list-style-type: none;
 }
 
@@ -481,28 +504,29 @@ header.scrolled .navbar{
 } */
 
 .footer-container .links{
-    font-size: 3rem;
+    font-size: 30px;
     display: flex;
-    gap:2.5rem;
-    margin-bottom: 2rem;
+    gap:25px;
+    margin-bottom: 20px;
     cursor: pointer;
-    margin-left: 2rem;
+    margin-left: 20px;
 }
 
 
 .footer-container .footer-items{
-    font-size: 1.3rem;
+    font-size: 13px;
     color: #808080;
     display: flex;
     text-transform: capitalize;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .footer-container .footer-items ul{
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    gap:20px;
+    align-items: flex-start;
 }
 
 .footer-container .footer-items ul li{
@@ -518,12 +542,12 @@ header.scrolled .navbar{
 
 
 .footer-container .btn{
-    font-size: 1.3rem;
+    font-size: 13px;
     color: #808080;
     border:1px solid;
     display: inline-block;
-    padding: .7rem;
-    margin-bottom: 2rem;
+    padding: 7px;
+    margin-bottom: 20px;
     cursor:pointer;
 }
 
