@@ -13,6 +13,7 @@
 
 body{
     font-family: var(--ff);
+    background-color: #141414;
 }
 
 
@@ -148,10 +149,10 @@ header.scrolled .navbar{
 /* ####### bill-board ##########  */
 
 .bill-board{
-    position: absolute;
+    position: relative;
     top:0;
     width: 100%;
-    height: 56.25vw;
+    height: 54vw;
     background-color: #000;
 
 }
@@ -312,3 +313,227 @@ header.scrolled .navbar{
     
 }
 
+/* ------ titles------------ */
+
+.titles{
+    position: relative;
+    /* border:2px solid white; */
+    top:-15vw
+    
+}
+
+/* title-container  */
+
+
+
+.title-container .row{
+    /* border:2px solid white; */
+    margin: 3vw 0;
+    padding-left: 4vw;
+    /* position: relative; */
+}
+
+.title-container .row .row-title{
+    color: var(--color-fade-white);
+    font-size: 2.1rem;
+    margin-bottom: 1.5vw;
+}
+
+.title-container .row .card-container{
+    display: flex;
+    gap:.6vw;
+    overflow:auto;
+    pointer-events: none;
+    position: relative;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.title-container .row .card{
+    border: 2px solid;
+    min-width: 17%;
+    max-width: 17%;
+    pointer-events: auto;
+}
+
+.title-container .card .image img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* //// info ///  */
+
+.title-container .card .info{
+    background-color: #141414;
+    font-size: .8vw;
+    padding: 1vw;
+    color: var(--color-fade-white);
+}
+
+
+.title-container .card .info .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .8vw;
+}
+
+.title-container .card .info .icons .fa-play,
+.title-container .card .info .icons .fa-plus,
+.title-container .card .info .icons .fa-thumbs-up,
+.title-container .card .info .icons .fa-chevron-down{
+    border:2px solid var(--color-fade-white);
+    padding: .5vw;
+    border-radius: 5vw;
+    
+
+}
+
+
+.title-container .card .info .icons .fa-play{
+    background-color: var(--color-fade-white);
+    color: black;
+    padding: .4vw .5vw;
+}
+
+
+
+/* hr-age-qlty */
+
+.title-container .card .info .hr-age-qlty{
+    /* border: 2px solid; */
+    display: flex;
+    gap:.7vw;
+    align-items: center;
+    margin-bottom: .7vw;
+
+}
+
+.title-container .card .info .hr-age-qlty .age{
+    border:1px solid;
+    padding: .1vw .3vw;
+    font-size: .6vw;
+}
+
+.title-container .card .info .hr-age-qlty .qlty{
+    border:1px solid;
+    font-size: .4vw;
+    padding: .1vw .3vw;
+    border-radius: .2vw;
+}
+
+.title-container .card .info .genre{
+    display: flex;
+    align-items: center;
+    gap:.6vw;
+}
+
+.title-container .card .info .genre .fa-circle{
+    font-size: .3vw;
+    color: rgb(129, 128, 128);
+}
+
+.title-container .card .info{
+    display:none;
+}
+
+/* .title-container .card:hover{
+    transform: scale(1.3);
+    z-index: 10;
+    overflow:initial;
+} */
+
+/* .title-container .card:hover .info{
+    display:block;
+} */
+
+
+/* ---------- footer -----------  */
+
+.footer{
+    /* border:2px solid red; */
+    position: relative;
+    top:-10vw;
+}
+
+.footer-container{
+    /* border:2px solid white; */
+
+    max-width: 900px;
+    width: 98%;
+    margin: auto;
+    padding: 2vw;
+    color: white;
+    padding-right: 10rem;
+}
+
+.footer-container li{
+    list-style-type: none;
+}
+
+/* .main{
+    border:10px solid green;
+    position: relative;
+} */
+
+.footer-container .links{
+    font-size: 3rem;
+    display: flex;
+    gap:2.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+
+.footer-container .footer-items{
+    font-size: 1.3rem;
+    color: #808080;
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer-container .footer-items ul{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.footer-container .footer-items ul li{
+    display: inline;
+    /* border: 2px solid; */
+    cursor: pointer;
+}
+
+.footer-container .footer-items ul li:hover{
+    border-bottom: 1px solid;
+}
+
+
+
+.footer-container .btn{
+    font-size: 1.3rem;
+    color: #808080;
+    border:1px solid;
+    display: inline-block;
+    padding: .7rem;
+    margin-bottom: 2rem;
+    cursor:pointer;
+}
+
+.footer-container .btn:hover{
+    color: white;
+    border-color: #808080;
+}
+
+.footer-container .copywrite{
+    color: #808080;
+}
+
+/* ----author ----------- */
